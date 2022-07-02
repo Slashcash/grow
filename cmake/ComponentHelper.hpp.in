@@ -1,0 +1,22 @@
+#ifndef @COMPONENT_NAME@Base_HPP
+#define @COMPONENT_NAME@Base_HPP
+
+#include "Component.hpp"
+
+class @COMPONENT_NAME@Base : public Component
+{
+   [[nodiscard]] inline std::string name() const noexcept override
+   {
+      return "@COMPONENT_NAME@";
+   }
+   [[nodiscard]] inline std::string description() const noexcept override
+   {
+      return "@COMPONENT_DESCRIPTION@";
+   }
+   [[nodiscard]] inline std::string version() const noexcept override
+   {
+      return "@PROJECT_VERSION@";
+   }
+ };
+
+#endif // @COMPONENT_NAME@Base_HPP

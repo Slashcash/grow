@@ -1,0 +1,20 @@
+add_new_library(
+  NAME
+  error
+  SOURCE_LIST
+  include/Error.hpp
+  INCLUDE_LIST
+  include
+  LINK_LIST
+  magic_enum
+  HEADER_ONLY)
+
+add_external_dependency(
+  GITHUB_AUTHOR
+  Neargye
+  GITHUB_REPO
+  magic_enum
+  GITHUB_COMMIT
+  v0.8.0
+  TARGET_NAMES
+  magic_enum)
